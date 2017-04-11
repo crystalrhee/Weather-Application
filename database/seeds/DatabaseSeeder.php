@@ -11,6 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $requests = factory('App\Request',50)->create();
+        $requests = factory('App\Request',365)->create();
     }
 }

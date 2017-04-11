@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', function() {
+	return view('welcome');
+});
+
+Route::get('/dashboard', 'WeatherController@index');
+Route::get('/daily', 'WeatherController@daily');
+Route::get('/weekly', 'WeatherController@weekly');
+// Route::get('/monthly', 'WeatherController@monthly');
+// Route::get('/blog', 'LocationsController@index');
+Route::get('/about', function() {
+	return view('about');
 });

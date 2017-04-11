@@ -1,1 +1,0 @@
-Use `php artisan db:seed` to run database seeder with fake data.
